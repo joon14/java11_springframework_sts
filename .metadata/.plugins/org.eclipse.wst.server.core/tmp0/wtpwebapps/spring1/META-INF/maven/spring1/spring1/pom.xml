@@ -171,18 +171,20 @@
 	</dependency>
 	
 	<!-- MySQL jdbc 라이브러리 -->
+	<!--
 	<dependency>
 	    <groupId>mysql</groupId>
 	    <artifactId>mysql-connector-java</artifactId>
 	    <version>8.0.31</version>
-	</dependency>
-
+	</dependency> -->
+	
 	<!-- MariaDB jdbc 라이브러리 -->
+	<!--
 	<dependency>
 	    <groupId>org.mariadb.jdbc</groupId>
 	    <artifactId>mariadb-java-client</artifactId>
 	    <version>3.1.0</version>
-	</dependency>
+	</dependency>  -->
 
 	<!-- SQL 구문을 XML로 쉽게 구현하기 위한 MyBatis 라이브러리 -->
 	<dependency>

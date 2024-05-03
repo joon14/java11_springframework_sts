@@ -25,8 +25,8 @@ public class HomeController {
 		String formatDate = dateFormat.format(date);
 		
 		model.addAttribute("serverTime", formatDate);
-		model.addAttribute("author", "김기태");
-		model.addAttribute("company", "파람소프트");
+		model.addAttribute("author", "정도준");
+		model.addAttribute("company", "kh교육원");
 		
 		return "home";
 	}
