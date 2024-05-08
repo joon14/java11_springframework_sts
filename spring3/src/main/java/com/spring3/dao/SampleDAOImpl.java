@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import com.spring3.dto.Sample;
 
 @Repository
-public class SampleDAOimpl implements SampleDAO {
+public class SampleDAOImpl implements SampleDAO {
 
 	@Autowired
 	private SqlSession sqlSession;
