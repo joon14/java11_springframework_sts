@@ -13,3 +13,5 @@ insert into sample values (2, '샘플2', default);
 insert into sample values (3, '샘플3', default);
 
 commit;
+
+drop table sample;

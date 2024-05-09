@@ -1,0 +1,27 @@
+<Part 1>
+1. 기존 study04 Copy -> study05(Paste) 생성
+[ Get ]
+2. com.###.controller -> TestController2.java 생성 및 get1.do~get5.do 내용작성
+3. src/main/webapp/WEB-INF/views -> test2 폴더 생성 -> test2 폴더 안에 get1.jsp~get5.jsp 생성 및 내용작성
+4. src/main/webapp/WEB-INF/views 에 있는 home.jsp에 get1.jsp~get5.jsp 경로 내용작성
+[ Post ]
+5. com.###.controller -> TestController2.java에 post.do, post1.do~post5.do 내용작성
+6. src/main/webapp/WEB-INF/views -> test2 폴더 안에 post.jsp, post1.jsp~post5.jsp 생성 및 내용작성
+7. src/main/webapp/WEB-INF/views 에 있는 home.jsp에 post.jsp 경로 내용작성
+
+<Part 2>
+1. 기존 study05 Copy -> study06(Paste) 생성
+2. com.###.controller ->RestfulController.java 생성 및 api1.do~api4.do 내용작성
+3. src/main/webapp/WEB-INF/views 에 있는 home.jsp에 api1.do~api4.do 경로 내용작성
+
+4. com.###.controller -> RestfulController.java에 api5.do 내용작성
+5. com.###.controller ->RESTSubController.java 생성 및 api5 내용작성
+6. src/main/webapp/WEB-INF/views -> api 폴더 생성 -> api 폴더 안에 api5.jsp 생성 및 내용작성
+7. src/main/webapp/WEB-INF/views 에 있는 home.jsp에 api5.jsp 경로 내용작성
+
+8. oracle 시작 -> store table 생성
+9. src/main/resouces/mappers -> storeMapper.xml 생성 및 내용작성
+10. src/main/java/com.###.dao -> StoreDAO.java(Interface) + StoreDAOImpl.java 생성 및 내용작성
+11. src/main/java/com.###.service -> StoreService.java(Interface) + StoreServiceImpl.java 생성 및 내용작성
+
+12. 프로젝트 실행 후, 웹페이지에서 내용을 추가해보고, 추가한 내용이 데이터베이스에 정상적으로 insert 되어있는지 oracle을 통해 확인

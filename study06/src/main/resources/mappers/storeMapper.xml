@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+"-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="store">
+	<select id="getStoreList" resultType="com.spring3.dto.Store">
+		select * from store
+	</select>
+	<select id="getStore" resultType="com.spring3.dto.Store">
+		select * from store where storenum = #{storeNum}
+	</select>
+	<select id="maxNum" resultType="int">
+		select storenum from (select * from store order by storenum desc) where rownum=1
+	</select>
+	<insert id="insStore" parameterType="com.spring3.dto.Store">
+		insert into store values (#{storeNum}, #{storeName})
+	</insert>
+	<update id="upStore">
+		update store set storename=#{storeName} where storenum=#{storeNum}
+	</update>
+	<delete id="delStore">
+		delete from store where storenum=#{storeNum}
+	</delete>
+</mapper>
+<!-- 해당 요소의 id는 중복되어서도 안되며, 메소드 이름을 의미합니다. -->

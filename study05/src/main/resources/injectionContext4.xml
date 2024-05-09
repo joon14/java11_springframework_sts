@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="apple" class="com.spring3.dto.Apple">
+		<constructor-arg name="price" value="5000"></constructor-arg>
+	</bean>
+	
+	<bean id="mango" class="com.spring3.dto.Mango">
+		<constructor-arg name="price" value="4000"></constructor-arg>
+	</bean>
+	
+	<bean id="cherry" class="com.spring3.dto.Cherry">
+		<constructor-arg name="num" value="20"></constructor-arg>
+	</bean>
+	
+	<bean id="mart1" class="com.spring3.dto.Mart">
+		<property name="martName" value="LotteMart"></property>
+		<property name="frSet">
+			<set>
+				<ref bean="apple" />
+				<ref bean="mango" />
+				<ref bean="cherry" />
+				<bean class="com.spring3.dto.Kiwi">
+					<constructor-arg name="num" value="10"></constructor-arg>
+				</bean>
+			</set>
+		</property>
+	</bean>
+</beans>
